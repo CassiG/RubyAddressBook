@@ -1395,3 +1395,47 @@ Processing by ContactsController#new as HTML
 Completed 200 OK in 34ms (Views: 20.3ms | ActiveRecord: 3.2ms)
 
 
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 15:26:04 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (3.5ms)
+  Rendered contacts/new.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 33ms (Views: 19.0ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2017-10-11 15:26:20 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"13ghCK8+ZYjq1HApv5+92yfp1zb74OU5iHpoWmmm8BvWLnQ8q1qjjNfHq4xWfrygq85YFicF7F+6SWbcnunyyw==", "contact"=>{"first_name"=>"Cass", "last_name"=>"Afras", "phone_number"=>"203123456", "email"=>"email@email.com", "description"=>"Test Test"}, "commit"=>"Create Contact"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/contacts_controller.rb:12:in `create'
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 15:27:30 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (10.4ms)
+  Rendered contacts/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 40ms (Views: 26.3ms | ActiveRecord: 3.2ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2017-10-11 15:27:41 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J1LEd7byPDI5xqO2gMAqauDARnw49pW4FGasNYdj8yomBJFDspb6NgTVeBNpISsRbOfJXOQTnN4mVaKzcCzx+g==", "contact"=>{"first_name"=>"Cass", "last_name"=>"Afras", "phone_number"=>"2063761103", "email"=>"email@email.com", "description"=>"test test"}, "commit"=>"Create Contact"}
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("first_name", "last_name", "phone_number", "email", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Cass"], ["last_name", "Afras"], ["phone_number", 2063761103], ["email", "email@email.com"], ["description", "test test"], ["created_at", "2017-10-11 22:27:41.357839"], ["updated_at", "2017-10-11 22:27:41.357839"]]
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/contacts
+Completed 302 Found in 21ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2017-10-11 15:27:41 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.2ms)
+
+
