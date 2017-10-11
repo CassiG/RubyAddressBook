@@ -1059,3 +1059,266 @@ Processing by ContactsController#index as HTML
 Completed 200 OK in 26ms (Views: 22.9ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-10-11 14:20:46 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.4ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 35ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-11 14:26:32 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 28ms (Views: 21.7ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:26:52 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:39:30 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/apprentice/cassig/RubyAddressBook/app/views"
+):
+    1: <main class="create">
+    2:   <section>
+    3:     <h2>Create a New Contact</h2>
+    4:     <%= render 'shared/form' %>
+    5:   </section>
+    6: </main>
+  
+app/views/contacts/new.html.erb:4:in `_app_views_contacts_new_html_erb__4226221603083901415_70287727734680'
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:40:13 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.4ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/apprentice/cassig/RubyAddressBook/app/views"
+):
+    1: <main class="create">
+    2:   <section>
+    3:     <h2>Create a New Contact</h2>
+    4:     <%= render 'shared/form' %>
+    5:   </section>
+    6: </main>
+  
+app/views/contacts/new.html.erb:4:in `_app_views_contacts_new_html_erb__4226221603083901415_70287727619600'
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:40:16 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.1ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/apprentice/cassig/RubyAddressBook/app/views"
+):
+    1: <main class="create">
+    2:   <section>
+    3:     <h2>Create a New Contact</h2>
+    4:     <%= render 'shared/form' %>
+    5:   </section>
+    6: </main>
+  
+app/views/contacts/new.html.erb:4:in `_app_views_contacts_new_html_erb__4226221603083901415_70287724318800'
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:40:28 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered contacts/new.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_form with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/Users/apprentice/cassig/RubyAddressBook/app/views"
+):
+    1: <main class="create">
+    2:   <section>
+    3:     <h2>Create a New Contact</h2>
+    4:     <%= render 'shared/form' %>
+    5:   </section>
+    6: </main>
+  
+app/views/contacts/new.html.erb:4:in `_app_views_contacts_new_html_erb__4226221603083901415_70287723244240'
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:41:13 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (0.3ms)
+  Rendered contacts/new.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 21ms (Views: 20.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:43:17 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (0.6ms)
+  Rendered contacts/new.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/apprentice/cassig/RubyAddressBook/app/views/shared/_form.html.erb:2: syntax error, unexpected ')'
+er "shared/errors", object:  );@output_buffer.safe_append='
+                              ^
+/Users/apprentice/cassig/RubyAddressBook/app/views/shared/_form.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/apprentice/cassig/RubyAddressBook/app/views/shared/_form.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/Users/apprentice/cassig/RubyAddressBook/app/views/shared/_form.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/shared/_form.html.erb:2: syntax error, unexpected ')'
+app/views/shared/_form.html.erb:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/shared/_form.html.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/shared/_form.html.erb:13: syntax error, unexpected keyword_end, expecting ')'
+app/views/contacts/new.html.erb:4:in `_app_views_contacts_new_html_erb__4226221603083901415_70287698679780'
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:43:23 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (1.5ms)
+  Rendered contacts/new.html.erb within layouts/application (2.9ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @contact do |f| %>
+    2:   <%= f.text_field :first_name %>
+    3:   <%= f.text_field :last_name %>
+    4:   <%= f.text_field :phone_number %>
+  
+app/views/shared/_form.html.erb:1:in `_app_views_shared__form_html_erb__4599805177938415887_70287724908380'
+app/views/contacts/new.html.erb:4:in `_app_views_contacts_new_html_erb__4226221603083901415_70287725004180'
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:43:45 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (2.3ms)
+  Rendered contacts/new.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 28ms (Views: 15.5ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:44:12 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (109.3ms)
+  Rendered contacts/new.html.erb within layouts/application (111.0ms)
+Completed 500 Internal Server Error in 115ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `text_field_with_label' for #<#<Class:0x007fda42a5ab30>:0x007fda4624f928>
+Did you mean?  text_field_tag):
+    1: <%= form_for @contact do |f| %>
+    2:   <%= text_field_with_label f, :first_name %>
+    3:   <%= f.text_field :last_name %>
+    4:   <%= f.text_field :phone_number %>
+    5:   <%= f.text_field :email %>
+  
+app/views/shared/_form.html.erb:2:in `block in _app_views_shared__form_html_erb__4599805177938415887_70287728197280'
+app/views/shared/_form.html.erb:1:in `_app_views_shared__form_html_erb__4599805177938415887_70287728197280'
+app/views/contacts/new.html.erb:4:in `_app_views_contacts_new_html_erb__4226221603083901415_70287728312820'
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:47:10 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (56.5ms)
+  Rendered contacts/new.html.erb within layouts/application (57.9ms)
+Completed 200 OK in 83ms (Views: 81.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:47:28 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (2.0ms)
+  Rendered contacts/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:48:03 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (4.0ms)
+  Rendered contacts/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 14:48:21 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (3.8ms)
+  Rendered contacts/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2017-10-11 14:48:23 -0700
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for ContactsController):
+  
+actionpack (5.1.4) lib/abstract_controller/base.rb:119:in `process'
+actionview (5.1.4) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.1.4) lib/action_controller/metal.rb:189:in `dispatch'
+actionpack (5.1.4) lib/action_controller/metal.rb:253:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `each'
+actionpack (5.1.4) lib/action_dispatch/journey/router.rb:33:in `serve'
+actionpack (5.1.4) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.0.3) lib/rack/etag.rb:25:in `call'
+rack (2.0.3) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.3) lib/rack/head.rb:12:in `call'
+rack (2.0.3) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.3) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.1.4) lib/active_record/migration.rb:556:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `block in call'
+activesupport (5.1.4) lib/active_support/callbacks.rb:97:in `run_callbacks'
+actionpack (5.1.4) lib/action_dispatch/middleware/callbacks.rb:24:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:59:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
