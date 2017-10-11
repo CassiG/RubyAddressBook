@@ -1,16 +1,10 @@
-<h1>The Amazing Address Book App</h1>
-  <section>
-    The Amazing Address Book App is your place to store all those contacts you need to remember. Why use your phone when you could use this awesome app? To begin adding new contacts, just click the create a new contact button below!
-
+  <main class="home">
     <%= link_to 'Create a New Contact', new_contact_path %>
-  </section>
-
-<h2>My Contacts</h2>
-  <section>
+    <h2>My Contacts</h2>
     <article>
       <% @contacts.each do |contact| %>
         <p><%= contact.full_name %></p>
         <p>phone: <%= contact.phone_number %> | email: <%= contact.email %></p>
       <% end %>
     </article>
-  </section>
+  </main>
