@@ -10,7 +10,7 @@
     <article>
       <% @contacts.each do |contact| %>
         <p><%= contact.full_name %></p>
-        <p> <%= contact.phone_number %> </p>
+        <p>phone: <%= contact.phone_number %> | email: <%= contact.email %></p>
       <% end %>
     </article>
   </section>

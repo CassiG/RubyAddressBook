@@ -818,3 +818,55 @@ Processing by ContactsController#index as HTML
 Completed 200 OK in 21ms (Views: 17.0ms | ActiveRecord: 0.2ms)
 
 
+  [1m[36mContact Load (0.3ms)[0m  [1m[34mSELECT  "contacts".* FROM "contacts" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "contacts" ("first_name", "last_name", "phone_number", "email", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["first_name", "Cassi"], ["last_name", "Gallagher"], ["phone_number", 360], ["email", "ccgall@gmail.com"], ["description", "Myself"], ["created_at", "2017-10-11 19:29:34.739406"], ["updated_at", "2017-10-11 19:29:34.739406"]]
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+Started GET "/" for 127.0.0.1 at 2017-10-11 12:29:38 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (19.5ms)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `full_name' for #<Contact:0x007fda45c210d8>):
+     9:   <section>
+    10:     <article>
+    11:       <% @contacts.each do |contact| %>
+    12:         <p><%= contact.full_name %></p>
+    13:         <p> <%= contact.phone_number %> </p>
+    14:       <% end %>
+    15:     </article>
+  
+app/views/contacts/index.html.erb:12:in `block in _app_views_contacts_index_html_erb___3028630895117042739_70287694291160'
+app/views/contacts/index.html.erb:11:in `_app_views_contacts_index_html_erb___3028630895117042739_70287694291160'
+Started GET "/" for 127.0.0.1 at 2017-10-11 12:30:09 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (2.1ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (17.1ms)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (undefined method `full_name' for #<Contact:0x007fda4224bf70>):
+     9:   <section>
+    10:     <article>
+    11:       <% @contacts.each do |contact| %>
+    12:         <p><%= contact.full_name %></p>
+    13:         <p>phone: <%= contact.phone_number %> | email: <%= contact.email %></p>
+    14:       <% end %>
+    15:     </article>
+  
+app/views/contacts/index.html.erb:12:in `block in _app_views_contacts_index_html_erb___3028630895117042739_70287727748300'
+app/views/contacts/index.html.erb:11:in `_app_views_contacts_index_html_erb___3028630895117042739_70287727748300'
+Started GET "/" for 127.0.0.1 at 2017-10-11 12:42:34 -0700
+Processing by ContactsController#index as HTML
+  Rendering contacts/index.html.erb within layouts/application
+  [1m[36mContact Load (0.2ms)[0m  [1m[34mSELECT "contacts".* FROM "contacts"[0m
+  Rendered contacts/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 37ms (Views: 29.3ms | ActiveRecord: 2.8ms)
+
+
