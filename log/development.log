@@ -1322,3 +1322,76 @@ puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
 puma (3.10.0) lib/puma/server.rb:437:in `process_client'
 puma (3.10.0) lib/puma/server.rb:301:in `block in run'
 puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (15.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "contacts"[0m
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 15:17:29 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (3.0ms)
+  Rendered contacts/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 35ms (Views: 22.1ms | ActiveRecord: 3.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2017-10-11 15:17:35 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hoVuuCfNlRbS9Pu2ngQJDruClSfWyPRzsfQevK9JxkiH0zuMI6lTEu/nIBN35Qh1N6UaBwot/RWDxxA6WAbEmA==", "contact"=>{"first_name"=>"", "last_name"=>"", "phone_number"=>"", "email"=>"", "description"=>""}, "commit"=>"Create Contact"}
+No template found for ContactsController#create, rendering head :no_content
+Completed 204 No Content in 44ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 15:18:06 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (5.2ms)
+  Rendered contacts/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 42ms (Views: 28.5ms | ActiveRecord: 2.8ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2017-10-11 15:18:11 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tNPKW/g6FMDujlYZMrRrvr4j7getAde/q9SjoHL5lFG1hZ9v/F7SxNOdjbzbVWrFMgRhJ3Hk3tmZ560mhbaWgQ==", "contact"=>{"first_name"=>"", "last_name"=>"", "phone_number"=>"", "email"=>"", "description"=>""}, "commit"=>"Create Contact"}
+Completed 500 Internal Server Error in 130ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `contact' for #<ContactsController:0x007fda45f3b278>
+Did you mean?  contact_url):
+  
+app/controllers/contacts_controller.rb:13:in `create'
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 15:18:20 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (3.1ms)
+  Rendered contacts/new.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 32ms (Views: 19.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2017-10-11 15:18:21 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"eMFB+UMzDCDnwi+nMecG57JGrx+vZw+T09YN8Iksvfd5lxTNR1fKJNrR9ALYBgecPmEgP3OCBvXh5QN2fmO/Jw==", "contact"=>{"first_name"=>"", "last_name"=>"", "phone_number"=>"", "email"=>"", "description"=>""}, "commit"=>"Create Contact"}
+No template found for ContactsController#create, rendering head :no_content
+Completed 204 No Content in 44ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 15:18:49 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (2.8ms)
+  Rendered contacts/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 33ms (Views: 19.0ms | ActiveRecord: 2.4ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2017-10-11 15:18:50 -0700
+Processing by ContactsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OF4WyF3oVC/YNNZ2Byh2dUsKcKO6iOU3Cz//zmA5qec5CEP8WYySK+UnDdPuyXcOxy3/g2Zt7FE5DPFIl3arNw==", "contact"=>{"first_name"=>"", "last_name"=>"", "phone_number"=>"", "email"=>"", "description"=>""}, "commit"=>"Create Contact"}
+No template found for ContactsController#create, rendering head :no_content
+Completed 204 No Content in 50ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2017-10-11 15:19:07 -0700
+Processing by ContactsController#new as HTML
+  Rendering contacts/new.html.erb within layouts/application
+  Rendered shared/_form.html.erb (3.4ms)
+  Rendered contacts/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 34ms (Views: 20.3ms | ActiveRecord: 3.2ms)
+
+
